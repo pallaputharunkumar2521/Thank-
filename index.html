@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ur Wish - Birthday Wishes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">✨ Ur Wish ✨</h1>
+            <p class="subtitle">Send Birthday Wishes & Celebrate Together</p>
+        </div>
+
+        <div class="content">
+            <!-- Wishes Display Section -->
+            <div class="wishes-display">
+                <div id="wishContainer" class="wish-container">
+                    <div class="welcome-message">
+                        <p>🎉 Welcome to Ur Wish! 🎉</p>
+                        <p>Be the first to share a birthday wish!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <h2>Send Your Wish</h2>
+                <form id="wishForm">
+                    <input 
+                        type="text" 
+                        id="nameInput" 
+                        placeholder="Your Name" 
+                        required
+                        maxlength="50"
+                    >
+                    <textarea 
+                        id="wishInput" 
+                        placeholder="Write your birthday wish here..." 
+                        rows="4"
+                        maxlength="500"
+                        required
+                    ></textarea>
+                    <button type="submit" class="submit-btn">Send Wish 🎂</button>
+                </form>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="wishCount">0</span>
+                    <span class="stat-label">Wishes Sent</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="loveCount">0</span>
+                    <span class="stat-label">Hearts Given</span>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+                <button id="clearBtn" class="action-btn clear-btn">Clear All Wishes</button>
+                <button id="downloadBtn" class="action-btn download-btn">Download Wishes</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for celebrating birthdays | Ur Wish v1.0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
